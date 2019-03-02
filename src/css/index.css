@@ -6,7 +6,7 @@
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 }
 
 /* ----- NAV BAR ----- */
@@ -20,7 +20,7 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -45,6 +45,10 @@ ul a:hover {
   color: #eef9fd;
 }
 
+.nav-menu {
+  background-color: rgba(0,0,0,.75);
+}
+
 /* ----- MAIN STUFF ----- */
 
 body {
@@ -55,23 +59,20 @@ body {
   line-height: 1.5;
 }
 
-#root {
+/* #root {
   background-color: #3f3f3f;
   padding: 60px;
   border-radius: 20px;
   height: 100%;
   margin-top: 100px;
-}
+} */
 
-.logo {
+/* .logo {
   display: block;
   margin: 0 auto;
-}
+} */
 
-.nav-menu {
-  background-color: rgba(0,0,0,.75);
 
-}
 
 .intro-tickybot {
   align-items: center;
@@ -79,6 +80,11 @@ body {
   background-color: #55c0ec;
   padding: 16px;
   justify-content: center;
+  -webkit-box-direction: normal;
+  font-family: 'Signika', sans-serif;
+  /* font-weight: 300; */
+  line-height: 1.5;
+  flex-direction: vertical;
 }
 
 .ticky-description {
@@ -88,8 +94,27 @@ body {
   display: block;
 }
 
+.ticky-description h1{
+    color: rgba(0,0,0,.6);
+    font-size: 5rem;
+    letter-spacing: -.1875rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.slogan {
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 20;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
 .btn-add {
   display: flex;
+  border-radius: 4px;
+  padding: 1rem;
   align-items: center;
   background-color: #fff;
   justify-content: center;
@@ -97,9 +122,21 @@ body {
   margin: 0 auto;
   width: 100%;
   line-height: 1;
+  font-weight: 100;
 }
 
-#what-is-tickybot {
+.btn-add img {
+  width: 2.5rem;
+}
+
+.btn-add span {
+  font-size: 28px;
+  line-height: 1;
+  font-family: 'Signika', sans-serif;
+}
+
+
+.what-is-tickybot {
   background-color: white;
 
 }
@@ -107,10 +144,6 @@ body {
 #how-it-works {
   flex-direction: row;
   background-color: #90ddaa;
-
-}
-
-.boxes {
 
 }
 
