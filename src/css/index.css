@@ -111,6 +111,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* -------- BUTTON -------- */
 .btn-add {
   display: flex;
   border-radius: 4px;
@@ -127,28 +128,78 @@ body {
 
 .btn-add img {
   width: 2.5rem;
+  padding-right: 10px;
 }
 
 .btn-add span {
   font-size: 28px;
   line-height: 1;
   font-family: 'Signika', sans-serif;
+  /* margin-left: 40px; */
 }
 
-
+/* ----- SECTION WHAT IS TICKYBOT ----- */
 .what-is-tickybot {
   background-color: white;
+  font-family: 'Signika', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.page-half {
+  -webkit-box-flex: 1;
+  flex: 1 0 calc(50% - 2rem);
+  min-width: 300px;
+  margin: 16px;
 
 }
 
+/* ----- SECTION HOW IT WORKS ----- */
 #how-it-works {
-  flex-direction: row;
+  /* flex-direction: row; */
   background-color: #90ddaa;
+  color: #3F3F3F;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 
 }
 
-.box-description {
+.boxes {
+  display: flex;
+  margin: 16px;
+  align-self: stretch;
+  justify-content: space-between;
+  /* height: 150px; */
+  /* flex-direction: column; */
+}
+
+.boxes .box-third {
+  display: flex;
+  flex-direction: column;
+  background-color: #40596b;
+  align-items: center;
+  -webkit-box-align: center;
+  min-width: 300px;
+  margin: 10px;
+
+}
+
+.boxes .box-third img {
+  height: 250px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.boxes .box-third .box-description {
   background-color: #fff;
+  padding: 16px;
+  line-height: 30px;
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+  font-weight: 300;
 }
 
 footer {
